@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <script src="jquery.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="content">
-      <div id="digits">
-        <div class="digit-hor" id="a1"></div>
-        <div class="digit-ver right" id="a2"></div>
-        <div class="digit-ver right" id="a6"></div>
-        <div class="digit-hor no" id="a7"></div>
-        <div class="digit-ver right" id="a3"></div>
-        <div class="digit-ver right" id="a5"></div>
-        <div class="digit-hor no" id="a4"></div>
-      </div>
-      <input type="text" name="cyfra" id="cyfra" />
-      <button id="klik">kiklej</button>
-      <p>use abcdefg hex codes from <a href="https://en.wikipedia.org/wiki/Seven-segment_display#Hexadecimal"> here</a></p>
+    <div id="sounds">
+      <h1 class="display-4">Sounds on proto's stream</h1>
+      <table class="table table-dark table-sm">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+          </tr>
+        </thead>
+        <tbody id="soundTable"></tbody>
+      </table>
     </div>
     <script src="main.js"></script>
   </body>
